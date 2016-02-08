@@ -1,8 +1,6 @@
 import sublime, sublime_plugin
 import functools
 
-import os
-
 class FlowstateCommand(sublime_plugin.EventListener):
     pending = 0
 
