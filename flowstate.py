@@ -25,6 +25,4 @@ class FlowstateCommand(sublime_plugin.EventListener):
     def on_idle(self, view):  
         sublime.status_message("No activity in the past {:d}ms in file {:s}. Your work will be erased!".format(self.s.get('flowstate_timeout'), view.file_name()))
 
-        sublime.set_timeout(lambda: 
-            open(view.file_name(), 'w').close()
-        )
+        sublime.set_timeout(lambda: open(view.file_name(), 'w').close(), self.s.get('flowstate_timeout'))
