@@ -1,3 +1,3 @@
 # Sublime Flowstate
 
-A Sublime plugin which deletes what you typing.
+A [Sublime](https://www.sublimetext.com/) plugin which deletes what you typing.
